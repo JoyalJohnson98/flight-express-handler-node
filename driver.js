@@ -1,62 +1,15 @@
-const sequelize = require('./db');
-const { DataTypes } = require('sequelize');
-
-const Driver_Details = sequelize.define('driver', {
-    id: {
-        type: DataTypes.INTEGER,
-        primaryKey: true,
-        autoIncrement: true
-
-    },
-    Name: {
-        type: DataTypes.STRING(15),
-        allowNull: false
-
-    },
-    Email: {
-        type: DataTypes.STRING(16),
-        allowNull: false,
-        unique: true
-
-    },
-    Mobile: {
-        type: DataTypes.STRING(20),
-        allowNull: false,
-        unique: true
+const express =require('express');
+const cc = require('../controllers/driverController');
 
 
-    },
-    Address: {
-        type: DataTypes.STRING(12),
-        allowNull: false
-        
-    },
-    DOB: {
-        type: DataTypes.DATE,
-        allowNull: false
-        
+const router = express.Router()
 
-    },
-    Experience: {
-        type: DataTypes.STRING(20),
-        allowNull: false
+router.get('/driverdetail', cc.index);
+router.get('/driver', cc.create);
+router.post('/driver', cc.createPost);
+router.get('/driverUpdate/:id', cc.update);
+router.post('/driverUpdate/:id', cc.updatePost);
+router.get('/driverDelete/:id', cc.delete);
 
 
-    },
-    DL: {
-        type: DataTypes.STRING(20),
-        allowNull: false
-        
-
-    },
-    Exp_DL: {
-        type: DataTypes.STRING(20),
-        allowNull: false
-        
-
-    },
-
-
-});
-
-module.exports = Driver_Details;
+module.exports = router;

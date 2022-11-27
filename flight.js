@@ -1,39 +1,15 @@
-const sequelize = require('./db');
-const { DataTypes } = require('sequelize');
-
-const Flight_Details = sequelize.define('flight', {
-    id: {
-        type: DataTypes.INTEGER,
-        primaryKey: true,
-        autoIncrement: true
-
-    },
-    name: {
-        type: DataTypes.STRING(15),
-        allowNull: false
-
-    },
-    color: {
-        type: DataTypes.STRING(16),
-        allowNull: false
-    },
-
-    flightno: {
-        type: DataTypes.STRING(16),
-        allowNull: false,
-        unique: true
-
-    },
-    flightsize: {
-        type: DataTypes.STRING(20),
-        allowNull: false
-        
+const express =require('express');
+const cc = require('../controllers/flightController');
 
 
-    },
-    
+const router = express.Router()
+
+router.get('/flightdetail', cc.index);
+router.get('/flight', cc.create);
+router.post('/flight', cc.createPost);
+router.get('/flightUpdate/:id', cc.update);
+router.post('/flightUpdate/:id', cc.updatePost);
+router.get('/flightDelete/:id', cc.delete);
 
 
-});
-
-module.exports = Flight_Details;
+module.exports = router;
