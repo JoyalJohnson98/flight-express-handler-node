@@ -1,0 +1,230 @@
+ body {
+    background-image: url("/static/images/HD-wallpaper-airplane-aviation-aircraft-flight-plane-flying-ups.jpg");
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+} 
+
+/*  For  Login,Signup and Booking */
+.top1 {
+    width: 100vw;
+    height: 10vh;
+    margin: 0px;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 10px; */
+    background-color: rgba(37, 37, 35, 0.412);
+}
+
+.top2 {
+    width: 10vw;
+    height: 12vh;
+    color: black;
+    font-family: fantasy;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 50px;
+    position: absolute;
+    left: -20px;
+}
+
+.top3 {
+    height: 20vh;
+    position: absolute;
+    right: 0px;
+    font-size: 24px;
+    font-family: fantasy;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.button {
+    width: 9vw;
+    height: 5vh;
+    border-radius: 1cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button a {
+    color: black;
+}
+
+.button:hover {
+    background-color: rgb(66, 64, 64);
+    color: rgb(255, 242, 0);
+    cursor: pointer;
+}
+
+.button a:hover {
+    background-color: rgb(66, 64, 64);
+    color: rgb(255, 242, 0);
+    cursor: pointer;
+}
+
+.box {
+    margin-top: -29px;
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box1 {
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 {
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 900px;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 0px 20px 0px;
+    line-height: 40px;
+
+    /*trbl*/
+
+}
+
+input[type=text] {
+    width: 350px;
+    border-radius: 10px;
+    height: 10px;
+    border: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.psw {
+    width: 380px;
+    border-radius: 10px;
+    height: 30px;
+    border: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.btn {
+    background-color: black;
+    font-size: 24px;
+    width: 300px;
+    color: white;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 30px 0px 10px 0;
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+#loginform input:invalid {
+    border-color: red;
+}
+
+.btn:hover {
+    background-color: rgb(242, 241, 232);
+    color: black;
+    opacity: .8;
+}
+
+.btn a {
+    color: white;
+}
+
+.btn a:hover {
+    color: black;
+}
+
+/* Home Css */
+.one {
+    z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70pt;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.text {
+    justify-content: center;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: yellow;
+    }
+
+    50% {
+        color: white;
+    }
+
+    75% {
+        color: green;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+.row {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    color: rgb(14, 9, 9);
+    margin-top: 20px;
+
+}
+
+.home {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    color: rgb(11, 10, 10);
+    text-decoration: none;
+    margin-left: 10px;
+    margin-top: 0vh;
+}
+
+.Login {
+    font-size: x-large;
+    color: blue;
+    text-align: center;
+    height: 20vh;
+    width: 100vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+} 
