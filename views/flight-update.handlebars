@@ -1,0 +1,57 @@
+<div class="container">
+    <h1 class="text-center" style="text-align: center;"> Update Flight Details</h1>
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <form method="post" style="text-align: center; color:white">
+                <div>
+                    <tr>
+                        <td><label for="name">FlightName</label></td>
+                        <td><input type="text" name="name" id="name" class="form-control"
+                                value="{{data.dataValues.name}}"></td>
+                    </tr>
+                </div>
+                <br>
+                <div>
+                    <tr>
+                        <td><label for="color">FlightColor</label></td>
+                        <td><input type="text" name="color" id="color" class="form-control" -
+                                value="{{data.dataValues.color}}"></td>
+                    </tr>
+                </div>
+                <br>
+                <div>
+                    <tr>
+                        <td>
+                            <label for="flightno">FlightNo</label>
+                        </td>
+                        <td>
+
+                            <input type="text" name="flightno" id="flightno" class="form-control"
+                                value="{{data.dataValues.flightno}}">
+                        </td>
+                    </tr>
+
+                </div>
+                <br>
+                <div>
+                    <tr>
+                        <td><label for="flightsize">FlightSize</label> </td>
+                        <td>
+                            <input type="text" name="flightsize" id="flightsize" class="form-control"
+                                value="{{data.dataValues.flightsize}}">
+                        </td>
+
+                    </tr>
+
+
+                </div>
+                
+               
+                  
+                <div class="d-grid mt-4">
+                    <button class="btn btn-primary"> Confirm Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
